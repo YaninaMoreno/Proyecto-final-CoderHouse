@@ -1,0 +1,41 @@
+
+//Medias CarritoList/Navbar
+@media screen and (max-width: 768px) {
+    .navbar {
+        position: sticky;
+        top: 0%;
+        z-index: 1;
+    }
+    .navbar__item, .navbar-nav {
+        z-index: 2;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        background-color: color(bgBlack);
+    }
+    .carritoList {
+        position: absolute;
+        top: 32%;
+        right: 5%;
+        background-color: color(bgWhite);
+        min-width: 290px;
+        min-height: 72vh;
+        max-height: 72vh;
+        padding: 1rem;
+        z-index: 0;
+        overflow: auto;
+    }
+    }
+@media screen and (min-width: 769px) {
+    .carritoList {
+        position: absolute;
+        top: 8%;
+        right: 0%;
+        background-color: color(bgWhite);
+        min-width: 320px;
+        min-height: 70vh;
+        max-height: 70vh;
+        padding: 1rem;
+        overflow: auto;
+    }
+}

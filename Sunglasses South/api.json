@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "title": "Lentes Uma",
+        "img": "./img/anteojo1.jpg",
+        "precio": 2500
+    },
+    {
+        "id": 2,
+        "title": "Lentes Clara",
+        "img": "./img/anteojo2.jpg",
+        "precio": 1200
+    },
+    {
+        "id": 3,
+        "title": "Lentes Esra",
+        "img": "./img/anteojo3.jpg",
+        "precio": 2400
+    },
+    {
+        "id": 4,
+        "title": "Lentes Nial",
+        "img": "./img/anteojo4.jpg",
+        "precio": 3000
+    },
+    {
+        "id": 5,
+        "title": "Lentes Talia",
+        "img": "./img/anteojo5.jpg",
+        "precio": 3100
+    },
+    {
+        "id": 6,
+        "title": "Lentes Agatha",
+        "img": "./img/anteojo6.jpg",
+        "precio": 1600
+    },
+    {
+        "id": 7,
+        "title": "Lentes Candelaria",
+        "img": "./img/anteojo7.jpg",
+        "precio": 2670
+    },
+    {
+        "id": 8,
+        "title": "Lentes Roy",
+        "img": "./img/anteojo8.jpg",
+        "precio": 1799
+    },
+    {
+        "id": 9,
+        "title": "Lentes Gian",
+        "img": "./img/anteojo9.jpg",
+        "precio": 3699
+    },
+    {
+        "id": 10,
+        "title": "Lentes Flower",
+        "img": "./img/anteojo10.jpg",
+        "precio": 2399
+    },
+    {
+        "id": 11,
+        "title": "Lentes Valeria",
+        "img": "./img/anteojo11.jpg",
+        "precio": 3329
+    },
+    {
+        "id": 12,
+        "title": "Lentes Vianni",
+        "img": "./img/anteojo12.jpg",
+        "precio": 2899
+    }
+   
+]

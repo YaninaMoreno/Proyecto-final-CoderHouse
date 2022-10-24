@@ -1,0 +1,17 @@
+//Utilities
+@import "./utilities/variables",
+        "./utilities/functions",
+        "./utilities/mixins",
+        "./utilities/medias";
+//Base
+@import "./base/reset",
+        "./base/typo";
+//Layout
+@import "./layout/navbar",
+        "./layout/footer";
+//Components
+@import './components/botones',
+        './components/inputs',
+        './components/cards';
+//views
+@import "./views/index";

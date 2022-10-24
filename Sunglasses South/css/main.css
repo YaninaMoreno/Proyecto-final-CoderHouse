@@ -1,0 +1,389 @@
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+  }
+
+  .navbar__item, .navbar-nav {
+    z-index: 2;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: #313132;
+  }
+
+  .carritoList {
+    position: absolute;
+    top: 32%;
+    right: 5%;
+    background-color: #f5f5f7;
+    min-width: 290px;
+    min-height: 72vh;
+    max-height: 72vh;
+    padding: 1rem;
+    z-index: 0;
+    overflow: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .carritoList {
+    position: absolute;
+    top: 8%;
+    right: 0%;
+    background-color: #f5f5f7;
+    min-width: 320px;
+    min-height: 70vh;
+    max-height: 70vh;
+    padding: 1rem;
+    overflow: auto;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hind Siliguri", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+* a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+h4 {
+  font-family: "Hind Siliguri", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+h5 {
+  font-family: "Hind Siliguri", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+p {
+  font-family: "Hind Siliguri", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.navbar {
+  position: relative;
+}
+.navbar a {
+  color: #FFF;
+  text-decoration: none;
+}
+.navbar .navbar__logo {
+  width: 100px;
+  margin-left: 1rem;
+}
+.navbar .navbar__item {
+  align-items: center;
+  gap: 15px;
+  margin-right: 1rem;
+}
+.navbar .navbarCarrito {
+  width: 25px;
+  cursor: pointer;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
+footer a {
+  color: #1d1d1f;
+  text-decoration: underline;
+}
+footer a:hover {
+  color: #1d1d1f;
+}
+footer img {
+  width: 25px;
+  height: 25px;
+}
+
+.ctaShop {
+  padding: 1.3em 3em;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #FFF;
+  background-color: #1d1d1f;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.ctaShop.ctaShop:hover {
+  background-color: #FFF;
+  box-shadow: 0px 0px 5px #FFF;
+  color: #1d1d1f;
+  transform: translateY(-7px);
+}
+.ctaShop.ctaShop:active {
+  transform: translateY(-1px);
+}
+
+.btnRatio {
+  width: 100%;
+  height: 30px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #313132;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #313132;
+}
+.btnRatio.btnRatio::before {
+  content: "";
+  width: 0;
+  height: 1800%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #313132;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+.btnRatio.btnRatio:hover::before {
+  width: 105%;
+}
+.btnRatio.btnRatio:hover {
+  color: #f5f5f7;
+}
+
+.btnArriba {
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  padding: 5px 10px 30px 10px;
+  background-color: #313132;
+  border-radius: 50px;
+  color: #f5f5f7;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+.btnCarritoList {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 10px;
+  background: #313132;
+  color: #FFF;
+  max-height: 40px;
+  border: 1px solid #313132;
+}
+
+.btnBorrar {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 10px;
+  background-color: #fff;
+  color: #ff0000;
+  max-height: 40px;
+  border: 1px solid #ff0000;
+}
+.btnBorrar.btnBorrar:hover {
+  background-color: #ff0000;
+  color: #fff;
+  border: #ff0000;
+  transition: all 0.3s ease-in;
+}
+
+.inputSearch {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  border-bottom: solid 1px #313132;
+  outline: none;
+  background-color: #FFF;
+  color: #1d1d1f;
+  transition: 0.3s ease;
+}
+.inputSearch.inputSearch::placeholder {
+  color: #9e9ea7;
+}
+.inputSearch.inputSearch:focus, .inputSearch.inputSearch:hover {
+  outline: none;
+  border: solid 1px #313132;
+  background-color: #fff;
+}
+
+.cartaContenedora {
+  background-color: #FFF;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  min-width: 250px;
+  min-height: 364px;
+}
+.cartaContenedora .cartaImg {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  padding: 1rem;
+}
+.cartaContenedora .cartaTitulo {
+  color: #1d1d1f;
+  padding: 10px 15px 0px 14px;
+  margin: 15px 0px 0px 0px;
+}
+.cartaContenedora .cartaDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+.cartaContenedora .cartaDiv p {
+  padding: 10px;
+  margin: 10px 5px;
+}
+.cartaContenedora .cartaDiv .cartaBtn {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 10px;
+  background: #313132;
+  color: #FFF;
+  max-height: 40px;
+  border: 1px solid #313132;
+  margin: 10px;
+  transition: all 0.3s ease 0s;
+}
+.cartaContenedora .cartaDiv .cartaBtn.cartaBtn:hover {
+  border: 1px solid #313132;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+}
+
+.carritoDiv img {
+  width: 30px;
+}
+.carritoDiv p {
+  margin-bottom: 0;
+}
+.carritoDiv .carritoBorrar {
+  border: none;
+}
+.carritoDiv .carritoTrash {
+  border: solid 1px #f41c1c;
+  padding: 3px;
+  height: 20px;
+  width: 20px;
+}
+
+.contenedor {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.hero {
+  background-color: #313132;
+  height: 80vh;
+}
+.hero img {
+  width: 370px;
+}
+.hero p {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 105vh;
+    overflow: hidden;
+  }
+  .hero img {
+    width: 250px;
+  }
+}
+.productosFiltro {
+  border: 1px solid #313132;
+  padding-top: 30px;
+  max-height: 370px;
+}
+
+.filtro {
+  display: none;
+}
+
+.banner {
+  background-color: rgb(16, 15, 16);
+  color: #FFF;
+  text-align: center;
+  padding: 50px;
+  min-height: 220px;
+}
+
+.carritoList {
+  box-shadow: 2px 4px 12px rgba(255, 255, 255, 0.3);
+  border-radius: px;
+  transition: transform 1s ease;
+  transform: translate(0, -200%);
+  position: absolute;
+}
+
+.isActive {
+  transform: translate(0, 0);
+}
+
+.cartaPrecio::before {
+  content: "$ ";
+}
+
+.carritoPrecio::before {
+  content: "$ ";
+}
+
+/*# sourceMappingURL=main.css.map */

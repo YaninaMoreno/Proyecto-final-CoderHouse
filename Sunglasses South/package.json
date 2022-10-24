@@ -1,0 +1,15 @@
+{
+  "name": "sunglasses-south",
+  "version": "1.0.0",
+  "description": "ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss ./css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YaninaMoreno/Proyecto-final-CoderHouse.git"
+  }
+  
+  }
+  

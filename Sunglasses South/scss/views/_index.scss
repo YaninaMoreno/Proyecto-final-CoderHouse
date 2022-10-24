@@ -1,0 +1,58 @@
+.contenedor {
+    @include contenedor(50px);
+}
+.hero {
+    background-color: color(bgBlack);
+    height: 80vh;
+    img {
+        width: 370px;
+    }
+    p {
+        margin-bottom: 3rem;
+    }
+}
+//Medias Hero
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 105vh;
+        overflow: hidden;
+        img {
+        width: 250px;
+        }
+    }
+}
+//filtrar productos
+.productosFiltro {
+    border: 1px solid color(bgBlack);
+    padding-top: 30px;
+    max-height: 370px;
+}
+//barra de busqueda
+.filtro{
+    display: none;
+}
+//banner
+.banner {
+    background-color: rgba(16, 15, 16);
+    color: color(textWhite);
+    text-align: center;
+    padding: 50px;
+    min-height: 220px;
+}
+//Carrito desplegable
+.carritoList {
+    box-shadow: 2px 4px 12px rgb(255, 255, 255, 0.3);
+    border-radius: px;
+    transition: transform 1s ease;
+    transform: translate(0, -200%);
+    position: absolute;
+}
+.isActive {
+    transform: translate(0,0);
+}
+.cartaPrecio::before {
+    content: '$ ' ;
+}
+.carritoPrecio::before {
+    content: '$ ' ;
+}

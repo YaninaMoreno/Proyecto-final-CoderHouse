@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--googleFonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--Toastify JS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!--Sweetalert 2-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--css-->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Sunglasses | South</title>
+</head>
+<body>
+<header class="hero" id="inicio">
+    <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="navbar__logo" src="./img/Phonetify.svg" alt="Phonetify Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar__item navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ourProduct">Productos</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <img class="navbarCarrito" id="navbarCarrito" src="./img/bag.svg" alt="carrito">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="row contenedor align-items-center">
+        <article class="col-12 col-md-6 text-center order-md-1">
+            <img src="./img/fotoortada.png" alt="foto de portada">
+        </article>
+        <article class="col-12 col-md-6 text-white text-md-start text-center order-md-0">
+            <h1>Sunglasses South</h1>
+            <p>Un espacio creado para brindar servicio y asesoramiento a la salud visual.
+                Con el transcurso del tiempo, formamos un equipo de trabajo en permanente capacitación y perfeccionamiento con un único objetivo: ofrecer lo mejor de nosotros mismos. Es nuestro desafío diario una atención superior con la mejor predisposición humana.</p>
+            <a class="ctaShop" href="#ourProduct">Comprar Ahora</a>
+        </article>
+    </section>
+</header>
+<main>
+<!--Barra de busqueda-->
+    <section class="busqueda contenedor">
+        <article class="row align-items-center">
+            <div class="col-12 d-flex">
+                <input class="inputSearch" placeholder="Buscar producto" type="search" id="buscador">
+            </div>
+        </article>
+    </section>
+<!--Barra de busqueda-->
+    <section class="productos contenedor">
+        <article class="row" id="cards">
+            <div class="col-12 text-center">
+                <h2 id="ourProduct">Nuestros Productos</h2>
+            </div>
+<!--Cards-->
+        <template class="templateCard" id="templateCard">
+            <div class="col-md-6 col-xl-3">
+                <div class="cartaContenedora" id="dispositivo">
+                    <div class="cartaTitulo"><h3></h3></div>
+                    <img class="cartaImg" src="" alt="">
+                    <div class="cartaDiv">
+                        <p class="cartaPrecio"></p>
+                        <button class="cartaBtn">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+<!--Cards-->
+        </article>
+    </section>
+</main>
+<!--Footer-->
+<footer class="footer container-fluid text-center">
+    <section>
+        <div class="row text-center my-5 ">
+            <div class="col-md-6 col-lg-3">
+                <a href="#">Términos y Condiciones</a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#">Politica de Arrepentimiento</a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#">Politica de Privacidad</a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#">Condiciones de Financiacion</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 mb-3">
+                <a href="https://facebook.com/"><img src="./img/facebook.svg" alt="facebook"></a>
+            </div>
+            <div class="col-3">
+                <a href="https://instagram.com/"><img src="./img/instagram.svg" alt="instagram"></a>
+            </div>
+            <div class="col-3">
+                <a href="https://whatsapp.com/"><img src="./img/whatsapp.svg" alt="whatsapp"></a>
+            </div>
+            <div class="col-3">
+                <a href="https://twitter.com/"><img src="./img/twitter.svg" alt="twitter"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr>
+                <p>© 2022 Yanina Moreno. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </section>
+</footer>
+<!--Footer-->
+<!--PanelCarrito-->
+<div class="carritoList" id="carritoList">
+    <p class="carritoVacio">Agrega productos a tu carrito</p>
+    <hr>
+    <template class="carritoCard">
+        <div class="carritoDiv d-flex flex-row justify-content-between align-items-center">
+        <img src="" alt="">
+        <p class="carritoNombre">nombre</p>
+        <p class="carritoCantidad">1</p>
+        <p class="carritoPrecio">precio</p>
+        <button class="carritoBorrar"><img class="carritoTrash" src="./img/trash3-fill.svg"></button>
+        </div>
+    </template>
+    <template class="totalComprar" id="totalComprar">
+        <p class="my-3">Productos: <span class="tProductos">1</span></p>
+        <p class="tPrecio">Total: $ <span class="tPrecio2"></span></p>
+        <button id="btnComprar" class="btnCarritoList">Comprar</button>
+        <button class="btnCarritoBorrar btnBorrar">Vaciar Carrito</button>
+    </template>
+</div>
+<!--PanelCarrito-->
+<!--boton hacia arriba-->
+<div>
+    <a class="btnArriba" href="#inicio" title="Volver arriba">
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#FFF" viewBox="0 0 384 512"><path d="M374.6 246.6C368.4 252.9 360.2 256 352 256s-16.38-3.125-22.62-9.375L224 141.3V448c0 17.69-14.33 31.1-31.1 31.1S160 465.7 160 448V141.3L54.63 246.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160C387.1 213.9 387.1 234.1 374.6 246.6z"/></svg>
+        </span>
+    </a>
+</div>
+<!--boton hacia arriba-->
+<script src="./js/app.js"></script>
+<!--Boostrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!--Boostrap JS-->
+<!--Toastify JS-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<!--Toastify JS-->
+</body>
+</html>
+
+
+
+

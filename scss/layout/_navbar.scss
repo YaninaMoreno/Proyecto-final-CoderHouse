@@ -1,0 +1,24 @@
+.navbar{
+    position: relative;
+    a {
+        color: color(textWhite);
+        text-decoration: none;
+    }
+    .navbar__logo{
+        width: 100px;
+        margin-left: 1rem;
+    }
+    .navbar__item {
+        align-items: center;
+        gap: 15px;
+        margin-right: 1rem;
+    }
+    .navbarCarrito {
+        width: 25px;
+        cursor: pointer;
+    }
+}
+    .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+

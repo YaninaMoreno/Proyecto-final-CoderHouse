@@ -1,0 +1,19 @@
+//ctaShop
+.ctaShop {
+    @include ctaShop;
+}
+//btn ratio
+.btnRatio {
+    @include btnRatio
+}
+//btnArriba
+.btnArriba{
+    @include btnArriba
+}
+.btnCarritoList {
+    @include btnCarritoList
+}
+
+.btnBorrar {
+    @include btnBorrar
+}
